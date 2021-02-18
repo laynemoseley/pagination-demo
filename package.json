@@ -1,0 +1,26 @@
+{
+  "name": "pagination-demo",
+  "version": "1.0.0",
+  "description": "A demo for doing pagination with ejs, express and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "clean": "node clean.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laynemoseley/pagination-demo.git"
+  },
+  "author": "Layne Moseley",
+  "bugs": {
+    "url": "https://github.com/laynemoseley/pagination-demo/issues"
+  },
+  "homepage": "https://github.com/laynemoseley/pagination-demo#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "unique-names-generator": "^4.3.1"
+  }
+}
