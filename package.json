@@ -6,7 +6,7 @@
   "scripts": {
     "seed": "node seed.js",
     "clean": "node clean.js",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,10 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongodb": "^3.6.4",
+    "nodemon": "^2.0.7",
     "unique-names-generator": "^4.3.1"
+  },
+  "nodemonConfig": {
+    "ext": "js,ejs"
   }
 }

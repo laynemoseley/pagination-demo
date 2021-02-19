@@ -39,7 +39,7 @@ checkForKittens = (db, callback) => {
 
 const insertKittens = (db, callback) => {
   const collection = db.collection("kittens");
-  const kittenCount = 100000;
+  const kittenCount = 10000;
   const kittens = Array(kittenCount)
     .fill(0)
     .map(() => {
