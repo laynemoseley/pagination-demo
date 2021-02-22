@@ -43,8 +43,8 @@ const insertKittens = (db, callback) => {
   const kittens = Array(kittenCount)
     .fill(0)
     .map(() => {
-      const width = randomInteger(100, 1000);
-      const height = randomInteger(100, 1000);
+      const width = randomInteger(500, 1000);
+      const height = randomInteger(500, 1000);
       const image = `https://placekitten.com/${width}/${height}`;
       const name = randomName();
 

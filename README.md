@@ -13,5 +13,9 @@ This repository demonstrates how to do pagination with ejs, express.js, and mong
 
 - Install NodeJS, MongoDB and make sure MongoDB is running
 - Run: `npm install`
-- Run: `npm seed`
-- Run: `npm start`
+- Run: `npm run seed`
+- Run: `npm run start`
+
+## Cleanup
+
+- `npm run clean`
