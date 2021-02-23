@@ -6,7 +6,7 @@ const port = 3000;
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("index", { foo: "Hello World!" });
+  res.render("index");
 });
 
 app.get("/kittens/all", (req, res) => {
@@ -32,6 +32,7 @@ app.get("/kittens/page/:page", (req, res) => {
 
 app.get("/kittens/page/:page/:limit", (req, res) => {
   // TODO
+  res.send(404)
 });
 
 app.listen(port, () => {
