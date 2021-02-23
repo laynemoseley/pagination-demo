@@ -19,10 +19,9 @@ app.get("/kittens/all", (req, res) => {
   });
 });
 
-app.get("/kittens/page/:page/:limit?", (req, res) => {
-  const limit = parseInt(req.params.limit || 10);
+app.get("/kittens/page/:page", (req, res) => {
   const page = parseInt(req.params.page || 1);
-  getKittens(limit, page, (err, kittens) => {
+  getKittens(10, page, (err, kittens) => {
     if (err) {
       return res.status(500);
     }
@@ -31,6 +30,10 @@ app.get("/kittens/page/:page/:limit?", (req, res) => {
   });
 });
 
+app.get("/kittens/page/:page/:limit", (req, res) => {
+  // TODO
+});
+
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`App listening at http://localhost:${port}`);
 });
