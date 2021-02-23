@@ -15,7 +15,7 @@ app.get("/kittens/all", (req, res) => {
       return res.status(500);
     }
 
-    res.render("kittens", { kittens, page: 0 });
+    res.render("kittens", { kittens, page: -1 });
   });
 });
 
