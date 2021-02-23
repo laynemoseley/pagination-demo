@@ -8,6 +8,13 @@
     <a href="/kittens/page/<%= page + 1 %>">Next</a>
 <% } %>
 
+<select onchange="selectLimit(this)">
+    <option value="10" <%= limit == 10 ? "selected" : "" %>>10</option>
+    <option value="25" <%= limit == 25 ? "selected" : "" %>>25</option>
+    <option value="50" <%= limit == 50 ? "selected" : "" %>>50</option>
+    <option value="100" <%= limit == 100 ? "selected" : "" %>>100</option>
+</select>
+
 <ul>
     <% kittens.forEach(function(kitten){ %>
       <img src=<%= kitten.image %> style="max-width: 150px; max-height: 150px;" />
@@ -15,3 +22,8 @@
     <% }); %>
 </ul>
 
+<script>
+    function selectLimit(select) {
+        window.location.href = `/kittens/page/1/${select.value}`
+    }
+</script>
